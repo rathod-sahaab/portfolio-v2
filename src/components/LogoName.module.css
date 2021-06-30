@@ -1,0 +1,12 @@
+.holder {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.logo {
+  display: inline-block;
+}
+.text {
+  margin-left: 1em;
+  text-transform: uppercase;
+}

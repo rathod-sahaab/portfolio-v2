@@ -1,0 +1,107 @@
+.navHolder {
+  position: relative;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  transition: 0.3s ease-in-out transform;
+}
+
+.navToggler {
+  display: none;
+  font-size: 30px;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  z-index: 9;
+  opacity: 0;
+}
+
+.navTogglerOpenIcon,
+.navTogglerCloseIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 9;
+  pointer-events: none;
+  display: none;
+}
+
+.navToggler::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    position: fixed;
+    background-color: var(--primary-bg);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0.9;
+  }
+
+  .navToggler:checked ~ .nav {
+    transform: translateX(0);
+  }
+
+  .navToggler:checked ~ .navTogglerCloseIcon {
+    opacity: 1;
+  }
+  .navToggler:not(:checked) ~ .navTogglerOpenIcon {
+    opacity: 1;
+  }
+
+  .navTogglerOpenIcon,
+  .navTogglerCloseIcon,
+  .navToggler {
+    display: block;
+  }
+
+  .linksContainer {
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    max-width: 360px;
+  }
+
+  .link {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.link {
+  text-transform: capitalize;
+  color: var(--primary-fg);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75em;
+  margin: 0.25em;
+
+  border-radius: 5px;
+
+  transition: 0.3s ease-in-out background;
+}
+.link:hover,
+.link:focus {
+  background-color: #fff3;
+  outline: none;
+}
