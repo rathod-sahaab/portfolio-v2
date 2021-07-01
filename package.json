@@ -18,10 +18,12 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-responsive": "^8.2.0"
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.1",
+    "@types/react-responsive": "^8.0.2",
     "prettier": "2.2.1"
   },
   "keywords": [

@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   left: 50%;
+  z-index: 7;
 
   transform: translateX(-50%);
   transition: 0.3s ease-in-out transform;
@@ -43,7 +44,6 @@
 
 @media screen and (max-width: 900px) {
   .nav {
-    position: fixed;
     background-color: var(--primary-bg);
     top: 0;
     left: 0;

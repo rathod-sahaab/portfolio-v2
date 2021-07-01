@@ -1,0 +1,52 @@
+.section {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameTitleHolder {
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-family: var(--heading-font);
+  font-size: 10em;
+  color: var(--transparent);
+}
+
+.name {
+  font-family: var(--heading-font);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  color: var(--primary-fg);
+  background-color: var(--primary-bg);
+  padding: 0.15em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  letter-spacing: 3px;
+}
+
+@keyframes toandfro {
+  0% {
+    transform: translateX(50%);
+  }
+  66% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* .title { */
+  /*   animation: toandfro 5s linear; */
+  /* } */
+}
