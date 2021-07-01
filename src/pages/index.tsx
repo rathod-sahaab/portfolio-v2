@@ -17,11 +17,13 @@ const IndexPage = () => {
           <h5 className={styles.title}>
             {!isSmallScreen && "DEVELOPER"} {isSmallScreen && "DEV"}
           </h5>
-          <h2 className={styles.name}>Abhay Raj Singh</h2>
+          <h2 className={styles.name}>
+            Abhay <span>Raj Singh</span>
+          </h2>
         </div>
       </section>
-      <h2 className="heading">About</h2>
-      <p>I am Abhay, I am a developer</p>
+      <h2 className={`heading ${styles.about}`}>About</h2>
+      <p className={styles.description}>I am Abhay, I am a developer</p>
     </Layout>
   )
 }

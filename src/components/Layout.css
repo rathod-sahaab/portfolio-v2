@@ -58,7 +58,14 @@ main {
   border-radius: 5px;
   padding: 3em;
   max-width: 700px;
+  width: 90%;
   margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .heading {
+    font-size: 72px;
+  }
 }
 
 @media screen and (max-width: 500px) {

@@ -36,6 +36,18 @@
   letter-spacing: 3px;
 }
 
+.name span {
+  font-weight: 300;
+}
+
+.about {
+  transform: translate(10%, 10%);
+  padding-bottom: 0;
+}
+.description {
+  margin-left: 30%;
+}
+
 @keyframes toandfro {
   0% {
     transform: translateX(50%);
