@@ -9,7 +9,6 @@ import UpAnim from "../components/UpAnim"
 
 const IndexPage = () => {
   const isSmallScreen = useMediaQuery({ maxWidth: "950px" })
-  console.log(isSmallScreen)
   return (
     <Layout>
       <Seo title="Home" />
@@ -30,21 +29,22 @@ const IndexPage = () => {
           <h3>Hi! I am Abhay</h3>
           <div className={styles.description}>
             <p>
-              I am a backend developer, with love for good UI and UX. I love
-              making software that solves problems and challenges me to learn
-              and grow. Mostly, I go by the alias <b>@rathod-sahaab</b> which is
-              a reference to the brilliant &quot;hacker&quot; movie{" "}
+              I am a full-stack developer, with love for backend, systems design
+              and instuitve user experiences. I love making softwares that solve
+              problems and challenge me to learn and grow. Mostly, I go by the
+              alias <b>@rathod-sahaab</b> which is a reference to the brilliant
+              &quot;hacking&quot; movie{" "}
               <a href="https://www.imdb.com/title/tt1280558/">A Wednesday</a>.
             </p>
             <p>
-              I have worked on awesome projects during my{" "}
-              <b>Google Summer of Code</b> interships with far more awesome
-              people at <a href="https://libvirt.org">libvirt</a> and{" "}
-              <a href="https://inkscape.org">Inkscape</a>.
+              I am two times <b>Google Summer of Code</b> scholar and have
+              worked on awesome projects during my internships with far more
+              awesome people at <a href="https://libvirt.org">libvirt</a> and{" "}
+              <a href="https://inkscape.org">Inkscape</a> as my mentors.
             </p>
             <p>
               I am a final year student at{" "}
-              <a href="https://nith.ac.in">NIT Hamirpur</a>, graduating in June
+              <a href="http://nith.ac.in">NIT Hamirpur</a>, graduating in June
               2022.
             </p>
           </div>
