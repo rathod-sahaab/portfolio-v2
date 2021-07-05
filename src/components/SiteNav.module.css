@@ -104,4 +104,5 @@
 .link:focus {
   background-color: #fff3;
   outline: none;
+  font-weight: normal;
 }

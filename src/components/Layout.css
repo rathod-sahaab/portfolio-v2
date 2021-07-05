@@ -5,6 +5,8 @@
   --secondary-fg: #aeaeae;
   --secondary-bg: #0e0e0e;
 
+  --link-color: #5599ff;
+
   --dots-color: var(--transparent);
 
   --transparent: rgba(254, 245, 230, 0.08);
@@ -38,6 +40,15 @@ main {
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  font-weight: bold;
+}
+
 .heading {
   font-family: var(--heading-font);
   font-size: 10em;
@@ -47,6 +58,7 @@ main {
   color: var(--transparent);
   text-align: center;
   padding: 0.3em;
+  margin-bottom: -0.95em;
 }
 
 .heading:first-child {
