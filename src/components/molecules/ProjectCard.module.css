@@ -27,6 +27,8 @@
   overflow: hidden;
   height: 45vw;
 
+  background-color: var(--transparent);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,4 +48,11 @@ img {
   margin: 0.25em;
   padding: 0.6em 1.2em;
   background-color: var(--transparent);
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    border-left: none;
+    padding-left: 0;
+  }
 }

@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import ProjectCard from "../components/molecules/ProjectCard"
 import { ProjectGifs } from "../components/molecules/ProjectGifs"
+import { StaticImage } from "gatsby-plugin-image"
 
 const projects = [
   {
@@ -14,6 +15,7 @@ const projects = [
     link: "https://console.elide.me",
     tagIds: ["rust", "react", "frontend", "js"],
     imgsrc: ProjectGifs.elide,
+    isgif: true,
     alt: "elide project's GIF",
   },
   {
@@ -23,6 +25,22 @@ const projects = [
     link: "https://rathod-sahaab.github.io",
     tagIds: ["react", "js"],
     imgsrc: ProjectGifs.qrcoder,
+    isgif: true,
+    alt: "QRCoder project's GIF",
+  },
+  {
+    title: "Command Palette: feature that made using Inkscape super fast",
+    description:
+      "Typing to do things is way faster than using a mouse, command palette is a feature that provides you just that -- A very smart box to type commands into -- and execute them before you could've even touched your mouse.",
+    link: "https://rathod-sahaab.github.io",
+    tagIds: ["cpp"],
+    imgsrc: (
+      <StaticImage
+        src="../images/projects/command-palette.png"
+        alt="Command Palete png"
+      />
+    ),
+    isgif: false,
     alt: "QRCoder project's GIF",
   },
 ]
@@ -41,7 +59,11 @@ const ProjectsPage = () => (
             link={project.link}
             tagIds={project.tagIds}
           >
-            <img src={project.imgsrc} alt={project.alt} />
+            {project.isgif ? (
+              <img src={project.imgsrc} alt={project.alt} />
+            ) : (
+              project.imgsrc
+            )}
           </ProjectCard>
         )
       })}
