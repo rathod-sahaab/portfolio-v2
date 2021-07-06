@@ -1,0 +1,20 @@
+.button {
+  font-size: 1rem;
+  border-radius: 9px;
+  color: var(--primary-fg);
+  background-color: #030303;
+  border: none;
+  padding: 0.6em 1.5em;
+  margin: 0.25em 0.25em;
+  letter-spacing: 1px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--transparent);
+}
+
+.button.active {
+  background-color: var(--primary-fg);
+  color: var(--primary-bg);
+}
