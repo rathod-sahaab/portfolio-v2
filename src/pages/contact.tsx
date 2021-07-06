@@ -15,20 +15,26 @@ const ContactPage = () => {
       <Seo title="Contact"></Seo>
       <h1 className="heading"> Contact</h1>
       <div className="card">
-        <form action="">
+        <form
+          action="https://formspree.io/f/abhayonlyone@gmail.com"
+          method="POST"
+        >
           <div className={styles.form}>
             <input
               type="text"
+              name="name"
               className={styles.textfield}
               placeholder="Name"
             />
             <input
               type="email"
+              name="email"
               className={styles.textfield}
               placeholder="Email"
             />
             <textarea
               className={styles.textfield}
+              name="content"
               placeholder="What's on your mind"
               style={{ resize: "vertical", minHeight: "6em" }}
             />

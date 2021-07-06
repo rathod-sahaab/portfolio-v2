@@ -1,0 +1,31 @@
+.card {
+  background-color: var(--secondary-bg);
+  border-radius: 5px;
+  padding: 1em;
+  max-width: 700px;
+  width: 90%;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.card h3 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 0.6em;
+}
+
+.ul {
+  margin-top: 1em;
+}
+
+.li {
+  display: flex;
+  align-items: center;
+
+  margin: 0.3em;
+}
+
+.li svg {
+  margin-right: 0.25em;
+}
