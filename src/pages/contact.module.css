@@ -34,6 +34,7 @@
   padding: 0.6em 1.2em;
   border: none;
   border-radius: 6px;
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -45,6 +46,12 @@
 
 .links *:not(:last-child) {
   margin-right: 2em;
+}
+
+.hr {
+  border: none;
+  border-bottom: 2px solid var(--transparent);
+  margin: 2em;
 }
 
 .link {

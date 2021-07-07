@@ -49,7 +49,7 @@ const ContactPage = () => {
             </button>
           </div>
         </form>
-        <hr style={{ margin: "2em", color: "var(--transparent)" }} />
+        <hr className={styles.hr} />
         <div className={styles.links}>
           <a href="mailto:rathod.sahaab@gmail.com">
             <GrMail className={styles.link} size={36} title="Send an email" />
