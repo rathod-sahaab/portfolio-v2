@@ -1,7 +1,7 @@
 .card {
   /* background-color: var(--secondary-bg); */
   border-left: 5px solid var(--primary-fg);
-  padding: 1em;
+  padding-left: 1em;
   max-width: 700px;
   width: 90%;
   margin: auto;
