@@ -1,0 +1,6 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/elide-app.gif": "static/elide-app-50fa12c53a4154c80f150cd6dd69a26b.gif",
+  "static/qrcoder.gif": "static/qrcoder-b3ba7b8a939c2cf88c9db6bbd4622590.gif"
+}
