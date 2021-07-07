@@ -34,7 +34,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop -p 3000",
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "yarn clean && gatsby build && gh-pages -d public -r https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/rathod-sahaab/blog",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
