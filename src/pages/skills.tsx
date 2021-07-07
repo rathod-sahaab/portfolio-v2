@@ -6,23 +6,57 @@ import Seo from "../components/seo"
 
 const skills = [
   {
+    name: "Databases",
+    description:
+      "Most crucial data structue for majority of applications, almost always the bottle-neck.",
+    aspects: [
+      {
+        name: "ACID properties",
+        description: "Atomicity, Consistency, Isolation, Durability",
+      },
+      {
+        name: "SQL: Structured Query Language",
+        description: "The language of RDBMSes",
+      },
+      {
+        name: "Indexes, partitions, sharding",
+        description: "Performance enhancement",
+      },
+    ],
+  },
+  {
+    name: "Computer Networks",
+    description: "Backbone of the world, how people lived before these?",
+    aspects: [
+      {
+        name: "TCP, UDP, HTTP 1.1/2, websockets, NBD, etc.",
+        description: "Protocols",
+      },
+      {
+        name: "TLS/SSL and encryption",
+        description: "Network security",
+      },
+      {
+        name: "OSI model and components",
+        description: "Implementation",
+      },
+    ],
+  },
+  {
     name: "C++",
     description:
       "Mother tounge, the first programming language I learned and still love.",
     aspects: [
       {
         name: "Standard Template Library",
-        level: 2,
         description: "Standard Template Library",
       },
       {
         name: "C++17",
-        level: 2,
         description: "ISO standard of C++17 and previous",
       },
       {
         name: "Object Oriented Programming",
-        level: 2,
         description: "Object Oriented Programming",
       },
     ],
@@ -33,17 +67,14 @@ const skills = [
     aspects: [
       {
         name: "Event loop",
-        level: 1,
         description: "The event loop JS engines use to be non-blocking",
       },
       {
         name: "Asynchronus programming",
-        level: 1,
         description: "asycn/await and promises",
       },
       {
         name: "ES6+",
-        level: 1,
         description: "The recent additions to ECMA Script 2015",
       },
     ],
@@ -52,10 +83,8 @@ const skills = [
     name: "TypeScript",
     description: "The reason I write so many web apps, great language",
     aspects: [
-      { name: "Classes", level: 1, description: "Object Oriented Programming" },
       {
-        name: "Interfaces",
-        level: 1,
+        name: "Classes and Interfaces",
         description: "Object Oriented Programming",
       },
     ],

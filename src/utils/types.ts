@@ -6,5 +6,4 @@ export class Tag {
 export class SkillAspect {
   name: string
   description: string
-  level: number
 }
