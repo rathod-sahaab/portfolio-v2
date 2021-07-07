@@ -37,11 +37,26 @@ const projects = [
     imgsrc: (
       <StaticImage
         src="../images/projects/command-palette.png"
-        alt="Command Palete png"
+        alt="Command Palete screen shot"
       />
     ),
     isgif: false,
-    alt: "QRCoder project's GIF",
+    alt: "Command Palete screen shot",
+  },
+  {
+    title: "Dart Board: A file server written in dart",
+    description:
+      "I made this project to learn about HTTP on lower level with pretty low level framework 'Shelf' using dart. I got to learn more about HTTP and how frameworks work internally.",
+    link: "https://github.com/rathod_sahaab/dart_board",
+    tagIds: ["dart", "frontend", "backend", "pug"],
+    imgsrc: (
+      <StaticImage
+        src="../images/projects/dart-board.png"
+        alt="Dart board screen shots"
+      />
+    ),
+    isgif: false,
+    alt: "Dart board screen shots",
   },
 ]
 

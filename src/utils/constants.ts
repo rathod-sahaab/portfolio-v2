@@ -4,4 +4,6 @@ export const tagIdNameMap = {
   frontend: "Frontend",
   js: "JavaScript",
   cpp: "C/C++",
+  dart: "DartLang",
+  pug: "Pug/Jade",
 }
