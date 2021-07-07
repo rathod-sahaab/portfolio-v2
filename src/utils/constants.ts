@@ -6,4 +6,6 @@ export const tagIdNameMap = {
   cpp: "C/C++",
   dart: "DartLang",
   pug: "Pug/Jade",
+  backend: "Backend",
+  nodejs: "NodeJS",
 }

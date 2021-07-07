@@ -32,7 +32,7 @@ const projects = [
     tagIds: ["cpp"],
     imgsrc: (
       <StaticImage
-        src="../images/projects/command-palette.png"
+        src="../../images/projects/command-palette.png"
         alt="Command Palete screen shot"
       />
     ),
@@ -42,12 +42,12 @@ const projects = [
   {
     title: "Dart Board: A file server written in dart",
     description:
-      "I made this project to learn about HTTP on lower level with pretty low level framework 'Shelf' using dart. I got to learn more about HTTP and how frameworks work internally.",
+      "A server that you can point to a folder and it will list it's contents for you, then click on a file to download it over HTTP. A project written in 3 days to learn about HTTP on lower level with pretty low level framework 'Shelf' using dart.",
     link: "https://github.com/rathod_sahaab/dart_board",
     tagIds: ["dart", "frontend", "backend", "pug"],
     imgsrc: (
       <StaticImage
-        src="../images/projects/dart-board.png"
+        src="../../images/projects/dart-board.png"
         alt="Dart board screen shots"
       />
     ),
