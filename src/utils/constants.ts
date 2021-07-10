@@ -1,4 +1,5 @@
 export const TAG_ID_TO_NAME = {
+  all: "All",
   backend: "Backend",
   cpp: "C/C++",
   dart: "Dart Lang",
