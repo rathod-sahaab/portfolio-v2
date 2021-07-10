@@ -1,5 +1,24 @@
 const skills = [
   {
+    name: "C++",
+    description:
+      "Mother tounge, the first programming language I learned and still love.",
+    aspects: [
+      {
+        name: "Standard Template Library",
+        description: "Standard Template Library",
+      },
+      {
+        name: "C++17",
+        description: "ISO standard of C++17 and previous",
+      },
+      {
+        name: "Object Oriented Programming",
+        description: "Object Oriented Programming",
+      },
+    ],
+  },
+  {
     name: "Databases",
     description:
       "Most crucial data structue for majority of applications, almost always the bottle-neck.",
@@ -16,6 +35,10 @@ const skills = [
         name: "Indexes, partitions, sharding",
         description: "Performance enhancement",
       },
+      {
+        name: "PostgreSQL, MongoDB, Redis",
+        description: "Type of databases",
+      },
     ],
   },
   {
@@ -23,35 +46,31 @@ const skills = [
     description: "Backbone of the world, how people lived before these?",
     aspects: [
       {
-        name: "TCP, UDP, HTTP 1.1/2, websockets, NBD, etc.",
+        name: "TCP, UDP, HTTP 1.1/2, websockets, NBD",
         description: "Protocols",
       },
       {
-        name: "TLS/SSL and encryption",
-        description: "Network security",
+        name: "TLS/SSL and SSL ceritificates",
+        description: "Encryption",
       },
       {
-        name: "OSI model and components",
-        description: "Implementation",
+        name: "OSI and TCP/IP",
+        description: "Layered Architecture",
       },
     ],
   },
   {
-    name: "C++",
+    name: "Object Oriented Programming and Design",
     description:
-      "Mother tounge, the first programming language I learned and still love.",
+      "The science of translating real-world complex problems, to solutions ritten in code which is easy making the software easy to make and reason about.",
     aspects: [
       {
-        name: "Standard Template Library",
-        description: "Standard Template Library",
+        name: "Abstraction, Encapsulation, Inheritance, Polymorphism",
+        description: "Core object oriented programming principles",
       },
       {
-        name: "C++17",
-        description: "ISO standard of C++17 and previous",
-      },
-      {
-        name: "Object Oriented Programming",
-        description: "Object Oriented Programming",
+        name: "UML class, sequence and state diagrams",
+        description: "Technical Design",
       },
     ],
   },
