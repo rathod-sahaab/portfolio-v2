@@ -18,7 +18,6 @@ const ProjectCard = ({
   return (
     <div className={styles.card}>
       <div className={styles.image}>{children}</div>
-      <div className={styles.spacer}></div>
       <div className={styles.content}>
         <a href={link}>
           <h2>{title}</h2>

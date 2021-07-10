@@ -13,13 +13,10 @@
 
 .content h2 {
   font-size: 32px;
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
   color: var(--primary-fg);
   text-decoration: underline;
-}
-
-.spacer {
-  height: 2rem;
 }
 
 .image {
@@ -54,5 +51,8 @@ img {
   .card {
     border-left: none;
     padding-left: 0;
+  }
+  .content h2 {
+    font-size: 24px;
   }
 }
