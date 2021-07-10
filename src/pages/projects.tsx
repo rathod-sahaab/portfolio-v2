@@ -9,7 +9,7 @@ import projects from "../utils/data/projects"
 import { TAG_ID_TO_NAME } from "../utils/constants"
 
 const ProjectsPage = () => {
-  const [tags, setTags] = React.useState([])
+  const [tagIds, setTags] = React.useState([])
   const [activeIndex, setActiveIndex] = React.useState(0)
 
   React.useEffect(() => {
@@ -25,15 +25,15 @@ const ProjectsPage = () => {
       <Seo title="Projects" />
       <h1 className="heading">Projects</h1>
       <FilterPanel
-        tags={tags}
+        tagIds={tagIds}
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}
       />
       <section>
         {projects.map(project => {
           if (
-            tags[activeIndex] === "all" ||
-            project.tagIds.indexOf(tags[activeIndex]) > -1
+            tagIds[activeIndex] === "all" ||
+            project.tagIds.indexOf(tagIds[activeIndex]) > -1
           ) {
             return (
               <ProjectCard

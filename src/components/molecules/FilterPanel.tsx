@@ -5,17 +5,17 @@ import RoundButton from "../atoms/RoundButton"
 import * as styles from "./FilterPanel.module.css"
 
 const FilterPanel = ({
-  tags,
+  tagIds,
   activeIndex,
   setActiveIndex,
 }: {
-  tags: string[]
+  tagIds: string[]
   activeIndex: number
   setActiveIndex: React.Dispatch<React.SetStateAction<number>>
 }) => {
   return (
     <div className={styles.card}>
-      {tags.map((tag: string, index: number) => {
+      {tagIds.map((tag: string, index: number) => {
         return (
           <RoundButton
             key={tag}
