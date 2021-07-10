@@ -21,11 +21,7 @@ const ProjectsPage = () => (
             link={project.link}
             tagIds={project.tagIds}
           >
-            {project.isgif ? (
-              <img src={project.imgsrc} alt={project.alt} />
-            ) : (
-              project.imgsrc
-            )}
+            {project.imgComponent}
           </ProjectCard>
         )
       })}

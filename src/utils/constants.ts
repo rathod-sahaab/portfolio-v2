@@ -1,11 +1,13 @@
-export const tagIdNameMap = {
-  rust: "Rust",
-  react: "ReactJS",
-  frontend: "Frontend",
-  js: "JavaScript",
-  cpp: "C/C++",
-  dart: "DartLang",
-  pug: "Pug/Jade",
+export const TAG_ID_TO_NAME = {
   backend: "Backend",
+  cpp: "C/C++",
+  dart: "Dart Lang",
+  frontend: "Frontend",
+  gtkmm: "GTKmm",
+  js: "JavaScript",
   nodejs: "NodeJS",
+  pug: "Pug/Jade",
+  react: "ReactJS",
+  rust: "Rust",
+  ts: "TypeScript",
 }
