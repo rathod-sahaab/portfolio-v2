@@ -17,6 +17,18 @@ const skills = [
         description: "Object Oriented Programming",
       },
     ],
+    certifications: [
+      {
+        issuer: "LinkedIn",
+        certification: "Top 5%",
+        link: "https://www.linkedin.com/in/rathod-sahaab/skills/report/C%2B%2B",
+      },
+      {
+        issuer: "HackerRank",
+        certification: "C++(Basic)",
+        link: "https://www.hackerrank.com/certificates/ee0741479896",
+      },
+    ],
   },
   {
     name: "Databases",
@@ -71,6 +83,18 @@ const skills = [
       {
         name: "UML class, sequence and state diagrams",
         description: "Technical Design",
+      },
+    ],
+    certifications: [
+      {
+        issuer: "Coursera",
+        certification: "Object Oriented Design",
+        link: "https://coursera.org/share/0e0932f0a9bbc733e8df666e9629acf1",
+      },
+      {
+        issuer: "LinkedIn",
+        certification: "Top 15%",
+        link: "https://www.linkedin.com/in/rathod-sahaab/skills/report/C%2B%2B",
       },
     ],
   },
