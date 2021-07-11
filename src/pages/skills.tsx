@@ -15,6 +15,7 @@ const SkillsPage = () => (
         name={skill.name}
         description={skill.description}
         aspects={skill.aspects}
+        certifications={skill.certifications}
       />
     ))}
   </Layout>

@@ -1,7 +1,8 @@
 import React from "react"
 import { IoMdCheckmarkCircleOutline } from "@react-icons/all-files/io/IoMdCheckmarkCircleOutline"
+import { FiAward } from "@react-icons/all-files/fi/FiAward"
 
-import { SkillAspect } from "../../utils/types"
+import { SkillAspect, SkillCert } from "../../utils/types"
 
 import * as styles from "./SkillCard.module.css"
 
@@ -9,10 +10,12 @@ const SkillCard = ({
   name,
   description,
   aspects,
+  certifications,
 }: {
   name: string
   description: string
   aspects: SkillAspect[]
+  certifications?: SkillCert[]
 }) => {
   return (
     <div className={styles.card}>
@@ -23,11 +26,27 @@ const SkillCard = ({
           return (
             <li className={styles.li} title={aspect.description}>
               <IoMdCheckmarkCircleOutline size="1.5em" />
-              {aspect.name}
+              <span>{aspect.name}</span>
             </li>
           )
         })}
       </ul>
+      {certifications ? (
+        <ul className={styles.ul}>
+          <div className={styles.certHeading}>Certifications</div>
+          {certifications.map(certification => (
+            <li className={styles.li}>
+              <FiAward size="1.5em" />
+              <span>
+                {certification.issuer}:{" "}
+                <a href={certification.link} target="_blank">
+                  {certification.certification}
+                </a>
+              </span>
+            </li>
+          ))}
+        </ul>
+      ) : null}
     </div>
   )
 }

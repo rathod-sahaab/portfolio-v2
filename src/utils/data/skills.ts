@@ -17,6 +17,45 @@ const skills = [
         description: "Object Oriented Programming",
       },
     ],
+    certifications: [
+      {
+        issuer: "LinkedIn",
+        certification: "Top 5%",
+        link: "https://www.linkedin.com/in/rathod-sahaab/skills/report/C%2B%2B",
+      },
+      {
+        issuer: "HackerRank",
+        certification: "C++(Basic)",
+        link: "https://www.hackerrank.com/certificates/ee0741479896",
+      },
+    ],
+  },
+  {
+    name: "Object Oriented Programming and Design",
+    description:
+      "The science of translating real-world complex problems, to solutions ritten in code which is easy making the software easy to make and reason about.",
+    aspects: [
+      {
+        name: "Abstraction, Encapsulation, Inheritance, Polymorphism",
+        description: "Core object oriented programming principles",
+      },
+      {
+        name: "UML class, sequence and state diagrams",
+        description: "Technical Design",
+      },
+    ],
+    certifications: [
+      {
+        issuer: "Coursera",
+        certification: "Object Oriented Design",
+        link: "https://coursera.org/share/0e0932f0a9bbc733e8df666e9629acf1",
+      },
+      {
+        issuer: "LinkedIn",
+        certification: "Top 15%",
+        link: "https://www.linkedin.com/in/rathod-sahaab/skills/report/C%2B%2B",
+      },
+    ],
   },
   {
     name: "Databases",
@@ -56,21 +95,6 @@ const skills = [
       {
         name: "OSI and TCP/IP",
         description: "Layered Architecture",
-      },
-    ],
-  },
-  {
-    name: "Object Oriented Programming and Design",
-    description:
-      "The science of translating real-world complex problems, to solutions ritten in code which is easy making the software easy to make and reason about.",
-    aspects: [
-      {
-        name: "Abstraction, Encapsulation, Inheritance, Polymorphism",
-        description: "Core object oriented programming principles",
-      },
-      {
-        name: "UML class, sequence and state diagrams",
-        description: "Technical Design",
       },
     ],
   },
