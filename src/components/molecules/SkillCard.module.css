@@ -19,6 +19,11 @@
   margin-top: 1em;
 }
 
+.certHeading {
+  margin-bottom: 0.75em;
+  font-weight: bold;
+}
+
 .li {
   display: flex;
   align-items: center;
@@ -28,4 +33,5 @@
 
 .li svg {
   margin-right: 0.25em;
+  min-width: 1.5em;
 }

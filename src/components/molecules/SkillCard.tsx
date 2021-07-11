@@ -26,20 +26,22 @@ const SkillCard = ({
           return (
             <li className={styles.li} title={aspect.description}>
               <IoMdCheckmarkCircleOutline size="1.5em" />
-              {aspect.name}
+              <span>{aspect.name}</span>
             </li>
           )
         })}
       </ul>
       {certifications ? (
         <ul className={styles.ul}>
-          <b>Certificates</b>
+          <div className={styles.certHeading}>Certifications</div>
           {certifications.map(certification => (
             <li className={styles.li}>
               <FiAward size="1.5em" />
               <span>
                 {certification.issuer}:{" "}
-                <a href={certification.link}>{certification.certification}</a>
+                <a href={certification.link} target="_blank">
+                  {certification.certification}
+                </a>
               </span>
             </li>
           ))}
