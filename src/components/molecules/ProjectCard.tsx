@@ -19,7 +19,7 @@ const ProjectCard = ({
     <div className={styles.card}>
       <div className={styles.image}>{children}</div>
       <div className={styles.content}>
-        <a href={link}>
+        <a href={link} target="_blank">
           <h2>{title}</h2>
         </a>
         <p>{description}</p>
