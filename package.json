@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "rathod-sahaab-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Website of Abhay Raj Singh",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Abhay Raj Singh <abhayonlyone@gmail.com>",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "gatsby": "^3.6.2",
