@@ -2,9 +2,39 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { AiOutlineMenu } from "@react-icons/all-files/ai/AiOutlineMenu"
 import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose"
+import { HiOutlineExternalLink } from "@react-icons/all-files/hi/HiOutlineExternalLink"
+import { FiDownload } from "@react-icons/all-files/fi/FiDownload"
+
+const LOCAL_LINKS = [
+  {
+    name: "Home",
+    to: "/",
+  },
+  {
+    name: "Projects",
+    to: "/projects",
+  },
+  {
+    name: "Skills",
+    to: "/skills",
+  },
+  {
+    name: "Contact",
+    to: "/contact",
+  },
+]
 
 import * as styles from "./SiteNav.module.css"
+
 const SiteNav = () => {
+  const [activePage, setActivePage] = React.useState("")
+
+  React.useEffect(() => {
+    const url: string = window.location.href
+    const slug: string = url.substr(url.lastIndexOf("/"))
+    setActivePage(slug)
+  }, [])
+
   return (
     <div className={styles.navHolder}>
       <input type="checkbox" className={styles.navToggler} />
@@ -12,26 +42,35 @@ const SiteNav = () => {
       <AiOutlineClose size="30" className={styles.navTogglerCloseIcon} />
       <nav className={styles.nav}>
         <div className={styles.linksContainer}>
-          <Link className={styles.link} to="/" title="Home">
-            Home
-          </Link>
-          <Link className={styles.link} to="/projects" title="Projects">
-            Projects
-          </Link>
-          <Link className={styles.link} to="/skills" title="Skills">
-            Skills
-          </Link>
+          {LOCAL_LINKS.map(localLink => {
+            return (
+              <Link
+                className={`${styles.link} ${
+                  localLink.to == activePage ? styles.active : ""
+                }`}
+                to={localLink.to}
+                title={localLink.name}
+              >
+                {localLink.name}
+              </Link>
+            )
+          })}
           <a
             className={styles.link}
             href="https://rathod-sahaab.github.io/blog/"
             target="_blank"
-            title="Blog"
+            title="Open Blog"
           >
-            Blog
+            Blog <HiOutlineExternalLink size="1em" />
           </a>
-          <Link className={styles.link} to="/contact" title="Contact">
-            Contact
-          </Link>
+          <a
+            className={styles.link}
+            href="https://docs.google.com/document/d/1-gbj0lrWHx3foaCjtzu456TVz-x-HVl3W9SlbZRPhkw/export?format=pdf"
+            title="Download Resume"
+            download
+          >
+            Resume <FiDownload size="1em" />
+          </a>
         </div>
       </nav>
     </div>
