@@ -43,8 +43,8 @@
 }
 
 .link.active {
-  color: var(--primary-bg);
-  background-color: var(--primary-fg);
+  border-bottom: 2px solid var(--primary-fg);
+  border-radius: 0;
 }
 
 .linksContainer {
@@ -94,6 +94,10 @@
   .link {
     text-align: center;
     width: 100%;
+  }
+
+  .link.active {
+    border: 2px solid var(--primary-fg);
   }
 
   .link > svg {
