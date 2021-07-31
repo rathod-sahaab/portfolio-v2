@@ -30,9 +30,9 @@ const IndexPage = () => {
           <div className={styles.description}>
             <p>
               I am a full-stack developer, with love for backend, systems design
-              and intuitve user experiences. I love making softwares that solve
+              and intuitive user experiences. I love making softwares that solve
               problems and challenge me to learn and grow. Mostly, I go by the
-              alias <b>@rathod-sahaab</b> which is a reference to the brilliant
+              alias <b>rathod-sahaab</b> which is a reference to the brilliant
               &quot;hacking&quot; movie{" "}
               <a href="https://www.imdb.com/title/tt1280558/">A Wednesday</a>.
             </p>
