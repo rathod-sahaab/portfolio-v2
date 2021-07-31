@@ -26,14 +26,17 @@ const LOCAL_LINKS = [
 
 import * as styles from "./SiteNav.module.css"
 
-const SiteNav = () => {
-  const [activePage, setActivePage] = React.useState("")
+function getSlugFromUrl(url: string): string {
+  let suffix: string = new URL(url).pathname
 
-  React.useEffect(() => {
-    const url: string = window.location.href
-    const slug: string = url.substr(url.lastIndexOf("/"))
-    setActivePage(slug)
-  }, [])
+  if (suffix.lastIndexOf("/") != 0) {
+    suffix = suffix.substr(0, suffix.length - 1)
+  }
+  return suffix
+}
+
+const SiteNav = () => {
+  const activePage = getSlugFromUrl(window.location.href)
 
   return (
     <div className={styles.navHolder}>

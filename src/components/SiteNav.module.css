@@ -51,7 +51,7 @@
   padding-top: 0.5em;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .nav {
     background-color: var(--primary-bg);
     top: 0;
