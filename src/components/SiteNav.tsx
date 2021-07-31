@@ -36,7 +36,7 @@ function getSlugFromUrl(url: string): string {
 }
 
 const SiteNav = () => {
-  const [activePage, _] = React.useState([getSlugFromUrl(window.location.href)])
+  const [activePage, _] = React.useState(getSlugFromUrl(window.location.href))
 
   return (
     <div className={styles.navHolder}>
