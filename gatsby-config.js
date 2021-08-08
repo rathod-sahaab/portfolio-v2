@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `rathod-sahaab-website`,
-        short_name: `rsweb`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        name: `Abhay Raj Singh`,
+        short_name: `Abhay`,
+        start_url: `https://rathod-sahaab.github.io`,
+        background_color: `#000000`,
+        theme_color: `#000000`,
         display: `minimal-ui`,
         icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
