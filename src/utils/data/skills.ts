@@ -66,8 +66,12 @@ const skills = [
       "Most crucial data structue for majority of applications, almost always the bottle-neck.",
     aspects: [
       {
-        name: "ACID properties",
-        description: "Atomicity, Consistency, Isolation, Durability",
+        name: "ER model & Relational models",
+        description: "Database models",
+      },
+      {
+        name: "Normalization",
+        description: "DB Design",
       },
       {
         name: "SQL: Structured Query Language",
@@ -129,6 +133,83 @@ const skills = [
       {
         name: "Classes and Interfaces",
         description: "Object Oriented Programming",
+      },
+    ],
+  },
+  {
+    name: "React JS",
+    tag: "frameworks",
+    description: "Septeration of concerns & JSX, fast, small, does the job.",
+    aspects: [
+      {
+        name: "Function and Class components",
+        description: "Way to create components",
+      },
+      {
+        name: "Hooks and Lifcycle methods",
+        description: "Way to create components",
+      },
+      {
+        name: "Redux",
+        description: "State management",
+      },
+    ],
+  },
+  {
+    name: "Node JS",
+    tag: "frameworks",
+    description:
+      "Non blocking(async) I/O, servers in JS and TS, awesome community.",
+    aspects: [
+      {
+        name: "Express",
+        description: "",
+      },
+      {
+        name: "Asynchronus I/O",
+        description: "Non blocking I/) performance++",
+      },
+      {
+        name: "Yarn and NPM",
+        description: "Package managers",
+      },
+    ],
+  },
+  {
+    name: "Git",
+    tag: "tools",
+    description: "Defacto source code manager",
+    aspects: [
+      {
+        name: "Basics",
+        description: "init, branches, push, pull, rebase etc.",
+      },
+      {
+        name: "Merge Conflict resolution",
+        description: "Inevitable",
+      },
+      {
+        name: "Cherrypicking and tree traversal",
+        description: "When history has to be dug up",
+      },
+    ],
+  },
+  {
+    name: "Linux",
+    tag: "tools",
+    description: "The omnipresent operating system.",
+    aspects: [
+      {
+        name: "Linux Programming",
+        description: "How to use linux APIs to write apps.",
+      },
+      {
+        name: "SSH into remote",
+        description: "Virtual machine management in the cloud",
+      },
+      {
+        name: "How to do things and CLI",
+        description: "Manpages and cheat.sh",
       },
     ],
   },

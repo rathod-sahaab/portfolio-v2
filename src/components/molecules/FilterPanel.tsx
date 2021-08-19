@@ -14,7 +14,6 @@ const FilterPanel = ({
   setActiveIndex: React.Dispatch<React.SetStateAction<number>>
   tagIdToName: any
 }) => {
-  console.log(tagIdToName)
   return (
     <div className={styles.card}>
       {tagIds.map((tagId: string, index: number) => {

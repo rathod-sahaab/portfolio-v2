@@ -14,9 +14,8 @@ export const TECHNOLOGY_MAP = {
 }
 
 export const SKILL_MAP = {
-  all: "All",
   languages: "Languages",
   concepts: "Concepts",
-  framework: "Frameworks",
+  frameworks: "Frameworks",
   tools: "Tools",
 }
