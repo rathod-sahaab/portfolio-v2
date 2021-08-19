@@ -12,3 +12,11 @@ export const TECHNOLOGY_MAP = {
   rust: "Rust",
   ts: "TypeScript",
 }
+
+export const SKILL_MAP = {
+  all: "All",
+  languages: "Languages",
+  concepts: "Concepts",
+  framework: "Frameworks",
+  tools: "Tools",
+}

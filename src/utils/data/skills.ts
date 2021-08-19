@@ -1,6 +1,7 @@
 const skills = [
   {
     name: "C++",
+    tag: "languages",
     description:
       "Mother tounge, the first programming language I learned and still love.",
     aspects: [
@@ -32,6 +33,7 @@ const skills = [
   },
   {
     name: "Object Oriented Design",
+    tag: "concepts",
     description:
       "The science of translating real-world complex problems, to solutions ritten in code which is easy making the software easy to make and reason about.",
     aspects: [
@@ -59,6 +61,7 @@ const skills = [
   },
   {
     name: "Databases",
+    tag: "concepts",
     description:
       "Most crucial data structue for majority of applications, almost always the bottle-neck.",
     aspects: [
@@ -82,6 +85,7 @@ const skills = [
   },
   {
     name: "Computer Networks",
+    tag: "concepts",
     description: "Backbone of the world, how people lived before these?",
     aspects: [
       {
@@ -100,6 +104,7 @@ const skills = [
   },
   {
     name: "JavaScript",
+    tag: "languages",
     description: "Fast(enough), omnipresent, and fun; some gripes though...",
     aspects: [
       {
@@ -118,6 +123,7 @@ const skills = [
   },
   {
     name: "TypeScript",
+    tag: "languages",
     description: "The reason I write so many web apps, great language",
     aspects: [
       {

@@ -17,16 +17,16 @@ const FilterPanel = ({
   console.log(tagIdToName)
   return (
     <div className={styles.card}>
-      {tagIds.map((tag: string, index: number) => {
+      {tagIds.map((tagId: string, index: number) => {
         return (
           <RoundButton
-            key={tag}
+            key={tagId}
             active={index == activeIndex}
             onClick={() => {
               setActiveIndex(index)
             }}
           >
-            {tagIdToName[tag]}
+            {tagIdToName[tagId]}
           </RoundButton>
         )
       })}
