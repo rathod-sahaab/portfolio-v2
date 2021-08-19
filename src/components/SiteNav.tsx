@@ -52,6 +52,7 @@ const SiteNav = () => {
           {LOCAL_LINKS.map(localLink => {
             return (
               <Link
+                key={localLink.name}
                 className={`${styles.link} ${
                   localLink.to == activePage ? styles.active : ""
                 }`}

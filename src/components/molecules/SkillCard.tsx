@@ -24,7 +24,11 @@ const SkillCard = ({
       <ul className={styles.ul}>
         {aspects.map(aspect => {
           return (
-            <li className={styles.li} title={aspect.description}>
+            <li
+              key={aspect.name}
+              className={styles.li}
+              title={aspect.description}
+            >
               <IoMdCheckmarkCircleOutline size="1.5em" />
               <span>{aspect.name}</span>
             </li>
@@ -35,7 +39,7 @@ const SkillCard = ({
         <ul className={styles.ul}>
           <div className={styles.certHeading}>Certifications</div>
           {certifications.map(certification => (
-            <li className={styles.li}>
+            <li key={certification.certification} className={styles.li}>
               <FiAward size="1.5em" />
               <span>
                 {certification.issuer}:{" "}
