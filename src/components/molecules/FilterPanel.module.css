@@ -6,4 +6,6 @@
   width: 90%;
   margin: auto;
   margin-top: 2em;
+  position: relative;
+  z-index: 6;
 }

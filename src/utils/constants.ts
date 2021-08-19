@@ -1,4 +1,4 @@
-export const TAG_ID_TO_NAME = {
+export const TECHNOLOGY_MAP = {
   all: "All",
   backend: "Backend",
   cpp: "C/C++",

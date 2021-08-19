@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 import ProjectCard from "../components/molecules/ProjectCard"
 
 import projects from "../utils/data/projects"
-import { TAG_ID_TO_NAME } from "../utils/constants"
+import { TECHNOLOGY_MAP } from "../utils/constants"
 
 const ProjectsPage = () => {
   const [tagIds, setTags] = React.useState([])
@@ -14,7 +14,7 @@ const ProjectsPage = () => {
 
   React.useEffect(() => {
     let tagIdsBuffer = []
-    for (const tagId in TAG_ID_TO_NAME) {
+    for (const tagId in TECHNOLOGY_MAP) {
       tagIdsBuffer.push(tagId)
     }
     setTags(tagIdsBuffer)
@@ -28,6 +28,7 @@ const ProjectsPage = () => {
         tagIds={tagIds}
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}
+	  tagIdToName={TECHNOLOGY_MAP}
       />
       <section>
         {projects.map(project => {

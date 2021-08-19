@@ -1,7 +1,7 @@
 import React from "react"
 
 import * as styles from "./ProjectCard.module.css"
-import { TAG_ID_TO_NAME } from "../../utils/constants"
+import { TECHNOLOGY_MAP } from "../../utils/constants"
 
 const ProjectCard = ({
   title,
@@ -25,7 +25,7 @@ const ProjectCard = ({
         <p>{description}</p>
         <div className={styles.tags}>
           {tagIds.map(tagId => {
-            return <span>{TAG_ID_TO_NAME[tagId]}</span>
+            return <span>{TECHNOLOGY_MAP[tagId]}</span>
           })}
         </div>
       </div>

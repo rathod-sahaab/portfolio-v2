@@ -1,0 +1,19 @@
+.skillsHolder {
+  display: grid;
+  max-width: 700px;
+  grid-template-columns: auto auto;
+  grid-gap: 1em;
+  margin: auto;
+  margin-top: 2em;
+}
+
+.skillsHolder > * {
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .skillsHolder {
+    grid-template-columns: auto;
+    width: 90%
+  }
+}

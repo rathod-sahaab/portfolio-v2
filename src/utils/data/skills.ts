@@ -31,7 +31,7 @@ const skills = [
     ],
   },
   {
-    name: "Object Oriented Programming and Design",
+    name: "Object Oriented Design",
     description:
       "The science of translating real-world complex problems, to solutions ritten in code which is easy making the software easy to make and reason about.",
     aspects: [

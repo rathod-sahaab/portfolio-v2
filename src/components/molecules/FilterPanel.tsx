@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { TAG_ID_TO_NAME } from "../../utils/constants"
 import RoundButton from "../atoms/RoundButton"
 
 import * as styles from "./FilterPanel.module.css"
@@ -8,11 +7,14 @@ const FilterPanel = ({
   tagIds,
   activeIndex,
   setActiveIndex,
+  tagIdToName,
 }: {
   tagIds: string[]
   activeIndex: number
   setActiveIndex: React.Dispatch<React.SetStateAction<number>>
+  tagIdToName: any
 }) => {
+  console.log(tagIdToName)
   return (
     <div className={styles.card}>
       {tagIds.map((tag: string, index: number) => {
@@ -24,7 +26,7 @@ const FilterPanel = ({
               setActiveIndex(index)
             }}
           >
-            {TAG_ID_TO_NAME[tag]}
+            {tagIdToName[tag]}
           </RoundButton>
         )
       })}
