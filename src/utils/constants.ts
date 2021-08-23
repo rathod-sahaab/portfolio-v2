@@ -1,16 +1,16 @@
 export const TECHNOLOGY_MAP = {
   all: "All",
-  backend: "Backend",
   cpp: "C/C++",
-  dart: "Dart Lang",
   frontend: "Frontend",
-  gtkmm: "GTKmm",
+  backend: "Backend",
   js: "JavaScript",
-  nodejs: "NodeJS",
-  pug: "Pug/Jade",
   react: "ReactJS",
-  rust: "Rust",
   ts: "TypeScript",
+  nodejs: "NodeJS",
+  dart: "Dart Lang",
+  gtkmm: "GTKmm",
+  pug: "Pug/Jade",
+  rust: "Rust",
 }
 
 export const SKILL_MAP = {

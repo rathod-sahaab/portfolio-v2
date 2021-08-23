@@ -107,6 +107,26 @@ const skills = [
     ],
   },
   {
+    name: "Operating Systems",
+    tag: "concepts",
+    description:
+      "API for writing programs, utility to assure harmony between them.",
+    aspects: [
+      {
+        name: "Memory management and scheduling",
+        description: "Every program gets a fair share",
+      },
+      {
+        name: "File systems and IO",
+        description: "Everything is a file",
+      },
+      {
+        name: "Deadlocks",
+        description: "Causes and resolution of conflicts",
+      },
+    ],
+  },
+  {
     name: "JavaScript",
     tag: "languages",
     description: "Fast(enough), omnipresent, and fun; some gripes though...",
@@ -122,6 +142,13 @@ const skills = [
       {
         name: "ES6+",
         description: "The recent additions to ECMA Script 2015",
+      },
+    ],
+    certifications: [
+      {
+        issuer: "CutShort",
+        certification: "JavaScript: Adbvanced",
+        link: "https://cutshort.io/certificate/52587",
       },
     ],
   },
@@ -154,6 +181,13 @@ const skills = [
         description: "State management",
       },
     ],
+    certifications: [
+      {
+        issuer: "CutShort",
+        certification: "React.js",
+        link: "https://cutshort.io/certificate/36667",
+      },
+    ],
   },
   {
     name: "Node JS",
@@ -167,11 +201,18 @@ const skills = [
       },
       {
         name: "Asynchronus I/O",
-        description: "Non blocking I/) performance++",
+        description: "Non blocking I/0 i.e. performance++",
       },
       {
         name: "Yarn and NPM",
         description: "Package managers",
+      },
+    ],
+    certifications: [
+      {
+        issuer: "CutShort",
+        certification: "Node.js",
+        link: "https://cutshort.io/certificate/51879",
       },
     ],
   },
@@ -210,6 +251,25 @@ const skills = [
       {
         name: "How to do things and CLI",
         description: "Manpages and cheat.sh",
+      },
+    ],
+  },
+  {
+    name: "Docker",
+    tag: "tools",
+    description: "The answer to 'If it works on your machine, the bring your machine'",
+    aspects: [
+      {
+        name: "Dockerfile and docker-compose",
+        description: "How to write the language of gods.",
+      },
+      {
+        name: "Depoyment experience",
+        description: "I can use it.",
+      },
+      {
+        name: "Deleting images and containers",
+        description: "Clean your room.",
       },
     ],
   },
