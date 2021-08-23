@@ -9,3 +9,9 @@
   position: relative;
   z-index: 6;
 }
+
+.card.center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -31,6 +31,7 @@ const SkillsPage = () => {
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}
         tagIdToName={SKILL_MAP}
+        centered={true}
       />
       <section className={styles.skillsHolder}>
         {skills.map(skill => {

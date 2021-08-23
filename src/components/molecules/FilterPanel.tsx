@@ -8,14 +8,16 @@ const FilterPanel = ({
   activeIndex,
   setActiveIndex,
   tagIdToName,
+  centered = false,
 }: {
   tagIds: string[]
   activeIndex: number
   setActiveIndex: React.Dispatch<React.SetStateAction<number>>
   tagIdToName: any
+  centered?: boolean
 }) => {
   return (
-    <div className={styles.card}>
+    <div className={centered ? `${styles.card} ${styles.center}` : styles.card}>
       {tagIds.map((tagId: string, index: number) => {
         return (
           <RoundButton
