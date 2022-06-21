@@ -9,15 +9,11 @@ import projects from "../utils/data/projects"
 import { TECHNOLOGY_MAP } from "../utils/constants"
 
 const ProjectsPage = () => {
-  const [tagIds, setTags] = React.useState([])
+  const [tagIds, setTags] = React.useState<string[]>([])
   const [activeIndex, setActiveIndex] = React.useState(0)
 
   React.useEffect(() => {
-    let tagIdsBuffer = []
-    for (const tagId in TECHNOLOGY_MAP) {
-      tagIdsBuffer.push(tagId)
-    }
-    setTags(tagIdsBuffer)
+    setTags(Object.keys(TECHNOLOGY_MAP))
   }, [])
 
   return (
@@ -28,7 +24,7 @@ const ProjectsPage = () => {
         tagIds={tagIds}
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}
-	  tagIdToName={TECHNOLOGY_MAP}
+        tagIdToName={TECHNOLOGY_MAP}
       />
       <section>
         {projects.map(project => {
