@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react"
 import RoundButton from "../atoms/RoundButton"
 
-import * as styles from "./FilterPanel.module.css"
-
 const FilterPanel = ({
   tagIds,
   activeIndex,
@@ -17,7 +15,12 @@ const FilterPanel = ({
   centered?: boolean
 }) => {
   return (
-    <div className={centered ? `${styles.card} ${styles.center}` : styles.card}>
+    <div
+      className={
+        "bg-bg-200 rounded-[5px] p-4 max-w-[700px] w-[90%] m-auto mt-8 relative z-[6] " +
+        (centered ? "flex justify-center flex-wrap" : "")
+      }
+    >
       {tagIds.map((tagId: string, index: number) => {
         return (
           <RoundButton

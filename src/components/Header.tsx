@@ -2,11 +2,9 @@ import React from "react"
 import LogoName from "./LogoName"
 import SiteNav from "./SiteNav"
 
-import * as styles from "./Header.module.css"
-
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className="fixed flex items-center p-4 bg-bg-100 justify-between left-[50vw] -translate-x-1/2 top-0 w-screen max-w-[1140px] z-10">
       <LogoName />
       <SiteNav />
     </header>
