@@ -4,8 +4,6 @@ import { FiAward } from "@react-icons/all-files/fi/FiAward"
 
 import { SkillAspect, SkillCert } from "../../utils/types"
 
-import * as styles from "./SkillCard.module.css"
-
 const SkillCard = ({
   name,
   description,
@@ -18,29 +16,32 @@ const SkillCard = ({
   certifications?: SkillCert[]
 }) => {
   return (
-    <div className={styles.card}>
-      <h3>{name}</h3>
+    <div className="rounded-[6px] p-4 bg-bg-200 max-w-[700px]">
+      <h3 className="font-bold text-[20px] mb-2">{name}</h3>
       <p>{description}</p>
-      <ul className={styles.ul}>
+      <ul className="mt-4">
         {aspects.map(aspect => {
           return (
             <li
               key={aspect.name}
-              className={styles.li}
+              className="flex items-center m-2"
               title={aspect.description}
             >
-              <IoMdCheckmarkCircleOutline size="1.5em" />
+              <IoMdCheckmarkCircleOutline size="1.5em" className="mr-2" />
               <span>{aspect.name}</span>
             </li>
           )
         })}
       </ul>
       {certifications ? (
-        <ul className={styles.ul}>
-          <div className={styles.certHeading}>Certifications</div>
+        <ul className="mt-4">
+          <div className="mb-2 font-bold">Certifications</div>
           {certifications.map(certification => (
-            <li key={certification.certification} className={styles.li}>
-              <FiAward size="1.5em" />
+            <li
+              key={certification.certification}
+              className="flex items-center m-2"
+            >
+              <FiAward size="1.5em" className="mr-2" />
               <span>
                 {certification.issuer}:{" "}
                 <a href={certification.link} target="_blank">

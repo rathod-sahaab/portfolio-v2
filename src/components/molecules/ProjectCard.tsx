@@ -1,6 +1,5 @@
 import React from "react"
 
-import * as styles from "./ProjectCard.module.css"
 import { TECHNOLOGY_MAP } from "../../utils/constants"
 
 const ProjectCard = ({
@@ -16,16 +15,22 @@ const ProjectCard = ({
   tagIds: string[]
 }>) => {
   return (
-    <div className={styles.card}>
-      <div className={styles.image}>{children}</div>
-      <div className={styles.content}>
+    <div className="m-auto mt-12 text-fg-100 max-w-[700px]">
+      <div className="max-h-[370px] overflow-hidden h-[45vw] flex items-center justify-center bg-transparent rounded-[6px]">
+        {children}
+      </div>
+      <div>
         <a href={link} target="_blank">
-          <h2>{title}</h2>
+          <h2 className="text-[24px] font-bold pt-2 text-fg-100">{title}</h2>
         </a>
-        <p>{description}</p>
-        <div className={styles.tags}>
+        <p className="text-fg-200">{description}</p>
+        <div className="mt-4">
           {tagIds.map(tagId => {
-            return <span>{TECHNOLOGY_MAP[tagId]}</span>
+            return (
+              <span className="bg-transparent mr-2 py-2 px-4 rounded-[6px]">
+                {TECHNOLOGY_MAP[tagId]}
+              </span>
+            )
           })}
         </div>
       </div>

@@ -23,6 +23,7 @@
     "react-responsive": "^8.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.4",
     "@types/react-helmet": "^6.1.1",
     "@types/react-responsive": "^8.0.2",
     "autoprefixer": "^10.4.7",

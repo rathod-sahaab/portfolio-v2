@@ -15,7 +15,7 @@ module.exports = {
       link: "#5599ff",
     },
     fontSize: {
-      title: '10em',
+      title: "10em",
     },
     fontFamily: {
       heading: ["Poppins", "Inter", "sans-serif"],
@@ -36,5 +36,4 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
 }

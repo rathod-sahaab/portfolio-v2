@@ -65,7 +65,7 @@ const SiteNav = () => {
           })}
           <a
             className={styles.link}
-            href="https://rathod-sahaab.github.io/blog/"
+            href="https://abhay.rs/blog/"
             target="_blank"
             title="Open Blog"
           >
