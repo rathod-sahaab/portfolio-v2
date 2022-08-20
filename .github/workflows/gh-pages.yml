@@ -8,7 +8,7 @@ jobs:
     - name: Set up Node
       uses: actions/setup-node@v1
       with:
-        node-version: 15.x
+        node-version: 16.x
     - name: Install Gatsby CLI
       run: npm install -g gatsby-cli
     - name: Install dependencies
