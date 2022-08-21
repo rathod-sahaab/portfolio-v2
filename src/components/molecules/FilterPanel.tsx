@@ -17,7 +17,7 @@ const FilterPanel = ({
   return (
     <div
       className={
-        "bg-bg-200 rounded-[5px] p-4 max-w-[700px] w-[90%] m-auto mt-8 relative z-[6] " +
+        "bg-bg-200 rounded-[6px] p-2 max-w-screen-md overflow-auto [&>*]:w-max md:[&>*]:w-auto w-fit m-4 md:m-auto mt-8 relative z-[6] " +
         (centered ? "flex justify-center flex-wrap" : "")
       }
     >

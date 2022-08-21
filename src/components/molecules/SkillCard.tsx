@@ -16,7 +16,7 @@ const SkillCard = ({
   certifications?: SkillCert[]
 }) => {
   return (
-    <div className="rounded-[6px] p-4 bg-bg-200 max-w-[700px]">
+    <div className="rounded-[6px] p-4 bg-bg-200">
       <h3 className="font-bold text-[20px] mb-2">{name}</h3>
       <p>{description}</p>
       <ul className="mt-4">

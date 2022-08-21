@@ -26,7 +26,7 @@ const ProjectsPage = () => {
         setActiveIndex={setActiveIndex}
         tagIdToName={TECHNOLOGY_MAP}
       />
-      <section>
+      <section className="p-4">
         {projects.map(project => {
           if (
             tagIds[activeIndex] === "all" ||

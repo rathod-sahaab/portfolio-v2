@@ -27,7 +27,7 @@ const SkillsPage = () => {
         tagIdToName={SKILL_MAP}
         centered={true}
       />
-      <section className="grid grid-cols-1 w-[90%] md:max-w-[700px] md:grid-cols-2 md:gap-[1em] m-auto mt-[2em]">
+      <section className="w-full p-4 m-auto mt-8 grid grid-cols-1 md:max-w-screen-md md:grid-cols-2 gap-4">
         {skills
           .filter(skill => {
             return (

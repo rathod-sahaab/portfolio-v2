@@ -30,7 +30,7 @@ function getActivePageFromUrl(url: string): string {
   let suffix: string = new URL(url).pathname
 
   if (suffix.lastIndexOf("/") != 0) {
-    suffix = suffix.substr(0, suffix.length - 1)
+    suffix = suffix.slice(0, suffix.length - 1)
   }
   return suffix
 }
