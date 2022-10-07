@@ -5,10 +5,10 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const projects = [
   {
-    title: "elide.me: A webapp to make your URLs catchy and easy.",
+    title: "elide.in: A webapp to make your URLs catchy and easy.",
     description:
       "The app helps you simplify your urls by letting you decide what they are so you can use relatable urls instead of some gibberish.",
-    link: "https://console.elide.me",
+    link: "https://console.elide.in",
     tagIds: ["frontend", "backend", "rust", "react", "ts"],
     imgComponent: <img src={ProjectGifs.elide} alt="elide project's GIF" />,
   },

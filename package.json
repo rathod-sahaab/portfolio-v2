@@ -20,7 +20,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-responsive": "^8.2.0"
+    "react-responsive": "^8.2.0",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.4",
